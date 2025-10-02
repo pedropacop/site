@@ -65,60 +65,24 @@ header h1 {
     transition: color 0.3s ease;
 }
 
-.tooltip {
-    position: relative;
-    cursor: pointer;
-    text-decoration: underline;
-}
 
-.tooltip-box {
-    text-align: justify;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    background-color: #ffffff;
-    color: #444;
-    border: 0.1rem solid rgba(126, 12, 128, 0.5);
-    border-radius: 1rem;
-    width: 25rem;
-    transition: opacity 1s ease;
-    z-index: 10;
-}
-
-.tooltip-text {
-    margin: 0.5rem;
-    font-size: 0.8rem;
-}
-
-.tooltip-image {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    right: 10rem;
-    border: 0.1rem solid rgba(126, 12, 128, 0.5);
-    transition: opacity 1s ease;
-    z-index: 10;
-}
-
-.tooltip-cover {
-    width: 10rem;
-    display: block;
-}
-
-.tooltip:hover .tooltip-box,
-.tooltip:hover .tooltip-image {
-    visibility: visible;
-    opacity: 1;
-}
 
 .covers {
     margin-top: 10rem;
+}
+
+.covers img {
+    transition: transform 0.2s ease;
 }
 
 .all_covers {
     margin-top: 2rem;
     width: 10rem;
     border: 0.1rem solid rgba(126, 12, 128, 0.5);
+}
+
+.covers img:hover {
+    transform: scale(1.05);
 }
 
 
