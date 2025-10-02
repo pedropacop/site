@@ -18,6 +18,9 @@ body {
     padding: 1.2rem;
 }
 
+/*
+header of the index
+*/
 header {
     text-align: center;
     margin-bottom: 3rem;
@@ -26,11 +29,6 @@ header {
 header h1 {
     font-size: 2.5rem;
     color: #222;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    color: #666;
 }
 
 .titles {
@@ -48,6 +46,9 @@ header h1 {
     color: #444;
 }
 
+/*
+writing list - the list of all books by title
+*/
 .writing-list {
     list-style: none;
 }
@@ -65,25 +66,56 @@ header h1 {
     transition: color 0.3s ease;
 }
 
+/*
+galery - the images of all books and respective details
+*/
 
-
-.covers {
-    margin-top: 10rem;
+.gallery {
+    margin: 5rem;
 }
 
-.covers img {
-    transition: transform 0.2s ease;
+.image-cards-container {
+    margin-top: 2rem;
+    display: flex;            /* deixa os filhos em linha */
+    flex-wrap: wrap;          /* permite quebrar linha se não couber */
+    gap: 3rem;
+    
+}
+
+.image-card {
+    width: 200px;             /* define um tamanho fixo para cada card */
+    position: relative;       /* para o overlay funcionar */
+    box-shadow: 0 0.3rem 1rem rgba(126, 12, 128, 0.5);
 }
 
 .all_covers {
-    margin-top: 2rem;
-    width: 10rem;
-    border: 0.1rem solid rgba(126, 12, 128, 0.5);
+    width: 100%;              /* imagem ocupa todo o card */
+    height: auto;             /* mantém proporção */
+    display: block;           /* remove espaço embaixo da imagem */
 }
 
-.covers img:hover {
-    transform: scale(1.05);
+/* Exemplo simples para overlay */
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(126, 12, 128, 0.6);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
+
+.image-card:hover .all_covers {
+    opacity: 0.3;
+}
+
+.image-card:hover .overlay-text {
+    opacity: 1;
+}
+
+
 
 
 /* 
