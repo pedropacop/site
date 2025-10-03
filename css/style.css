@@ -76,22 +76,22 @@ galery - the images of all books and respective details
 
 .image-cards-container {
     margin-top: 2rem;
-    display: flex;            /* deixa os filhos em linha */
-    flex-wrap: wrap;          /* permite quebrar linha se não couber */
+    display: flex;            
+    flex-wrap: wrap;          
     gap: 3rem;
     
 }
 
 .image-card {
-    width: 200px;             /* define um tamanho fixo para cada card */
-    position: relative;       /* para o overlay funcionar */
+    width: 13rem;             
+    position: relative;       
     box-shadow: 0 0.3rem 1rem rgba(126, 12, 128, 0.5);
 }
 
 .all_covers {
-    width: 100%;              /* imagem ocupa todo o card */
-    height: auto;             /* mantém proporção */
-    display: block;           /* remove espaço embaixo da imagem */
+    width: 100%;              
+    height: auto;             
+    display: block;          
 }
 
 /* Exemplo simples para overlay */
@@ -114,8 +114,6 @@ galery - the images of all books and respective details
 .image-card:hover .overlay-text {
     opacity: 1;
 }
-
-
 
 
 /* 
@@ -176,6 +174,10 @@ galery - the images of all books and respective details
 
 .short-tale p {
     margin-top: 1rem;
+}
+
+.paragraph {
+    margin-left: 1.5rem;
 }
 
 .ital {
