@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: "Georgia", serif;
+    font-family: "Lora", serif;
     line-height: 1.6;
     background: #ffffff;
     color: #333;
@@ -171,7 +171,7 @@ galery - the images of all books and respective details
     text-align: justify;
     line-height: 1.5;
     font-size: 1rem;
-    font-family: "Georgia", serif;
+    font-family: "Lora", serif;
 }
 
 .short-tale p {
